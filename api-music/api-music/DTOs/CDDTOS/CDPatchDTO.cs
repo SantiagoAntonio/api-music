@@ -2,12 +2,12 @@
 
 namespace api_music.DTOs.CDDTOS
 {
-    public class CDDTO
+    public class CDPatchDTO
     {
-        public int Id { get; set; }
+        [Required]
+        [StringLength(300)]
         public string Title { get; set; }
         public bool Status { get; set; }
         public DateTime Launch { get; set; }
-        public string Poster { get; set; }
     }
 }
